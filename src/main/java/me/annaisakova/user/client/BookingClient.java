@@ -16,5 +16,5 @@ public interface BookingClient {
             method= RequestMethod.GET,
             value="/v1/bookings/{userId}",
             consumes="application/json")
-    List<Booking> getBookings(@PathVariable("userId") Long userId);
+    String getBookings(@PathVariable("userId") Long userId);
 }

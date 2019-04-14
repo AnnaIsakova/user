@@ -19,7 +19,7 @@ public class UserController {
     private final BookingClient bookingClient;
 
     @GetMapping("/users/{userId}/booking")
-    public List<Booking> getBookings(@PathVariable Long userId) {
+    public String getBookings(@PathVariable Long userId) {
         return bookingClient.getBookings(userId);
     }
 }
